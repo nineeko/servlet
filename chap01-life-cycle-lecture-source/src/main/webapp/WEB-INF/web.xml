@@ -7,6 +7,7 @@
     <servlet>
     <servlet-name>xmlmapping</servlet-name>
     <servlet-class>com.neeko.chap01lifecyclelecturesource.section01.xml.LifeCycleTest</servlet-class>
+    <load-on-startup>2</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>xmlmapping</servlet-name>

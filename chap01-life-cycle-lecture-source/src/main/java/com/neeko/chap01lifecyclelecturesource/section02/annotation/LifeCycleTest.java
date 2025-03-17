@@ -4,11 +4,15 @@ import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 
 import java.io.IOException;
 
-
+/* @WebServlet : 서블릿을 섭르릿 컨테이너에 등록
+* value 속성 : 서블릿 매핑
+* */
+@WebServlet(value = "/annotation-lifecycle", loadOnStartup = 1)
 public class LifeCycleTest extends HttpServlet {
 
     public LifeCycleTest() {
